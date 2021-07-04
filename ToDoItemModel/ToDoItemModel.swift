@@ -29,16 +29,16 @@ public enum Importance: String {
 }
 
 public struct ToDoItem {
-    let uid: String
-    let text: String
-    let importance: Importance
-    let isDone: Bool
-    let isDirty: Bool
-    let deadline: Date?
-    let createdAt: Int
-    let updatedAt: Int?
+    public let uid: String
+    public let text: String
+    public let importance: Importance
+    public let isDone: Bool
+    public let isDirty: Bool
+    public let deadline: Date?
+    public let createdAt: Int
+    public let updatedAt: Int?
 
-    init(uid: String = UUID().uuidString,
+    public init(uid: String = UUID().uuidString,
          text: String,
          importance: Importance = .normal,
          isDone: Bool = false,
