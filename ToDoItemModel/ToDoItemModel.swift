@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum Importance: String {
+public enum Importance: String, Codable {
     case unimportant
     case normal
     case important
@@ -28,7 +28,7 @@ public enum Importance: String {
     }
 }
 
-public struct ToDoItem {
+public struct ToDoItem: Codable {
     public let uid: String
     public let text: String
     public let importance: Importance
